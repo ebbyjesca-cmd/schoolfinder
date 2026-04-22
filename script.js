@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    const isLoggedIn = localStorage.getItem("loggedIn");
+    const page = window.location.pathname.split("/").pop();
+
+    if(!isLoggedIn && page !== "index.html") {
+        window.location.href = "index.html";
+        return;
+    }
+
+    if(isLoggedIn && page === "index.html") {
+        window.location.href = "home.html";
+        return;
+    }
+})
+
 const signupbtn = document.getElementById("signupbtn");
 
 if  (signupbtn) {
