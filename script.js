@@ -37,7 +37,7 @@ if (loginbtn) {
             localStorage.setItem("LoggedIn", "true");
 
             alert("login successful!");
-            window.location.href = "index.html";
+            window.location.href = "home.html";
         } else {
             alert("invalid credentials");
         }

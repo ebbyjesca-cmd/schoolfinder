@@ -1,181 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>SchoolFinder</title>
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<style>
-html{
-scroll-behavior:smooth;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authentification page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class= "bg-[url('images/image1.jpg')] bg-no-repeat bg-cover h-screen flex items-center justify-center">
 
-<body class="bg-gray-50 font-sans">
+    <div class="bg-white p-8 rounded shadow w-80">
 
-<!-- NAVBAR -->
+        <h2 class="text-2xl font-bold mb-4 text-center justify-center">Login / Signup</h2>
+        <input id="email" type="email" placeholder="Email" class="border p-2 w-full mb-3">
+        <input id="password" type="password" placeholder="Password" class="border p-2 w-full mb-3">
 
-<nav class="bg-white shadow-md fixed w-full top-0 z-50">
-
-<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-<h1 class="text-2xl font-bold text-blue-600">SchoolFinder</h1>
-
-<ul id="menu" class="hidden md:flex gap-8 text-gray-700">
-
-    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-    <li><a href="#about" class="hover:text-blue-600">About</a></li>
-    <li><a href="#categories" class="hover:text-blue-600">Schools</a></li>
-    <li><a href="#contact" class="hover:text-blue-600">Support</a></li>
-    <li><a href="auth.html" class="hover:text-blue-600 bg-blue-200 p-2 rounded shadow">Login / Signup</a></li>
-
-</ul>
-
-<button id="menuBtn" class="md:hidden text-2xl">☰</button>
-
-</div>
-
-</nav>
-
-
-<!-- HERO -->
-
-<section id="home" class="pt-28 bg-blue-600 text-white">
-
-<div class="max-w-6xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
-
-<div class="flex-1">
-
-<h2 class="text-5xl font-bold mb-6">Find the Best School for Your Child</h2>
-
-<p class="mb-8 text-lg">Explore and compare schools from ECD to University across Kenya.</p>
-
-</div>
-
-<div class="flex-1">
-
-<img src="https://images.unsplash.com/photo-1588072432836-e10032774350"class="rounded-xl shadow-lg"/>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- HOW IT WORKS -->
-
-<section id="about" class="py-20">
-
-<div class="max-w-6xl mx-auto px-6 text-center">
-
-<h2 class="text-3xl font-bold mb-12">How It Works</h2>
-
-<div class="grid md:grid-cols-3 gap-10">
-
-<div class="bg-blue-200 p-6 shadow rounded">
-
-<h3 class="text-xl font-semibold mb-3">Explore Schools</h3>
-
-<p>Explore schools by location, level, type and Gender .</p>
-
-</div>
-
-<div class="bg-blue-200 p-6 shadow rounded">
-
-<h3 class="text-xl font-semibold mb-3">Compare Schools</h3>
-
-<p>Compare schools by their type, categories and location.</p>
-
-</div>
-
-<div class="bg-blue-200 p-6 shadow rounded">
-
-<h3 class="text-xl font-semibold mb-3">Contact Schools</h3>
-
-<p>Reach out to schools directly for admission.</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SCHOOL CATEGORIES (GRID) -->
-
-<section id="categories" class="bg-gray-100 py-20">
-
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="text-3xl font-bold text-center mb-12">Browse Schools</h2>
-
-<div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
-
-    <a href="ecd.html">
-    <div class="bg-blue-200 p-6 rounded shadow cursor-pointer hover:bg-blue-50">ECD</div>
-    </a>
-
-    <a href="primary.html">
-    <div class="bg-blue-200 p-6 rounded shadow cursor-pointer hover:bg-blue-50">Primary</div>
-    </a>
-
-    <a href="juniorschool.html">
-    <div class="bg-blue-200 p-6 rounded shadow cursor-pointer hover:bg-blue-50">Junior School</div>
-    </a>
-
-    <a href="seniorschool.html">
-    <div class="bg-blue-200 p-6 rounded shadow cursor-pointer hover:bg-blue-50">Senior Secondary</div>
-    </a>
-
-    <a href="tvet.html">
-    <div class="bg-blue-200 p-6 rounded shadow cursor-pointer hover:bg-blue-50">TVET</div>
-    </a>
-
-    <a href="university.html">
-    <div class="bg-blue-200 p-6 rounded shadow cursor-pointer hover:bg-blue-50">University</div>
-    </a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- CONTACT FORM -->
-
-<section id="contact" class="bg-gray-100 py-20">
-
-    <div class="max-w-4xl mx-auto px-6">
-
-    <h2 class="text-3xl font-bold text-center mb-10">Support / Contact Us</h2>
-
-    <form class="bg-white p-8 rounded shadow flex flex-col gap-6">
-
-        <input type="text" placeholder="Your Name" class="border p-3 rounded bg-blue-200"/>
-
-        <input type="email" placeholder="Email Address" class="border p-3 rounded bg-blue-200"/>
-
-        <textarea placeholder="Your Message" class="border p-3 rounded h-32 bg-blue-200"></textarea>
-
-        <button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-500">Send Message</button>
-
-    </form>
+        <button id="loginbtn" class="bg-blue-500 hover:bg-blue-600 text-white w-full py-2 mb-2">Login</button>
+        <button id="signupbtn" class="bg-blue-600 hover:bg-blue-700 text-white w-full py-2">Sign Up</button>
 
     </div>
-
-</section>
+<script src="script.js"></script> 
 </body>
-
-<!-- FOOTER -->
-
-<footer class="bg-gray-900 text-gray-400 py-10 text-center">
-
-<p>© 2026 SchoolFinder. All rights reserved.</p>
-
-</footer>
+</html>
