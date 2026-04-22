@@ -34,12 +34,21 @@ if (loginbtn) {
         }
 
         if (email ===savedUser.email && password === savedUser.password) {
-            localStorage.setItem("LoggedIn", "true");
+            localStorage.setItem("loggedIn", "true");
 
             alert("login successful!");
             window.location.href = "home.html";
         } else {
             alert("invalid credentials");
         }
+    });
+}
+
+const logoutBtn = document.getElementById("logoutBtn");
+console.log(logoutBtn)
+if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("loggedIn");
+        window.location.href = "index.html";
     });
 }
